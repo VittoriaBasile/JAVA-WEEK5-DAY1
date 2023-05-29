@@ -9,7 +9,6 @@ public class AnanasExtra extends IngredientiExtraDecorator {
 
 	public AnanasExtra(Pizza pizza) {
 		this.pizza = pizza;
-		pizza.setNome("hawaiiana");
 	}
 
 	@Override
@@ -37,7 +36,7 @@ public class AnanasExtra extends IngredientiExtraDecorator {
 
 	@Override
 	public String toString() {
-		return "Nome pizza=" + getNome() + ", Prezzo()=" + getPrezzo() + ", Calorie()=" + getCalorie()
+		return "Nome pizza=" + "Hawaiiana" + ", Prezzo()=" + getPrezzo() + ", Calorie()=" + getCalorie()
 				+ ", Ingredienti=" + getIngredientiBase();
 	}
 

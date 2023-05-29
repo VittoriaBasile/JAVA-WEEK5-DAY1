@@ -12,23 +12,9 @@ public class BeansConfiguration {
 		return new Margherita();
 	}
 
-	@Bean(name = "hawaiana")
-	AnanasExtra hawaiana(Pizza pizza) {
-		return new AnanasExtra(pizza);
-	}
-
-	@Bean(name = "diavola")
-	SalamePiccanteExtra diavola(Pizza pizza) {
-		return new SalamePiccanteExtra(pizza);
-	}
-
 	@Bean(name = "spigolata")
 	Spigolata spigolata() {
 		return new Spigolata();
 	}
 
-	@Bean(name = "prosciuttoExtra")
-	ProsciuttoExtra prosciuttoExtra(Pizza pizza) {
-		return new ProsciuttoExtra(pizza);
-	}
 }

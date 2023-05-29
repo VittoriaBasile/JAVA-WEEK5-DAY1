@@ -9,7 +9,11 @@ public class SalamePiccanteExtra extends IngredientiExtraDecorator {
 
 	public SalamePiccanteExtra(Pizza pizza) {
 		this.pizza = pizza;
-		pizza.setNome("diavola");
+	}
+
+	@Override
+	public String getNome() {
+		return pizza.getNome();
 	}
 
 	@Override
@@ -31,13 +35,8 @@ public class SalamePiccanteExtra extends IngredientiExtraDecorator {
 	}
 
 	@Override
-	public String getNome() {
-		return pizza.getNome();
-	}
-
-	@Override
 	public String toString() {
-		return "Nome pizza=" + getNome() + ", Prezzo()=" + getPrezzo() + ", Calorie()=" + getCalorie()
+		return "Nome pizza=" + "Diavola" + ", Prezzo()=" + getPrezzo() + ", Calorie()=" + getCalorie()
 				+ ", Ingredienti=" + getIngredientiBase();
 	}
 
