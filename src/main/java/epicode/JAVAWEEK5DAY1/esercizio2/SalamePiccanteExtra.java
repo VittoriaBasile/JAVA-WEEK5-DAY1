@@ -5,29 +5,29 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class AnanasExtra extends IngredientiExtraDecorator {
+public class SalamePiccanteExtra extends IngredientiExtraDecorator {
 
-	public AnanasExtra(Pizza pizza) {
+	public SalamePiccanteExtra(Pizza pizza) {
 		this.pizza = pizza;
-		pizza.setNome("hawaiiana");
+		pizza.setNome("diavola");
 	}
 
 	@Override
 	public double getPrezzo() {
 
-		return pizza.getPrezzo() + 0.50;
+		return pizza.getPrezzo() + 2.50;
 	}
 
 	@Override
 	public long getCalorie() {
 
-		return pizza.getCalorie() + 100;
+		return pizza.getCalorie() + 200;
 	}
 
 	@Override
 	public String getIngredientiBase() {
 
-		return pizza.getIngredientiBase() + " , ananas";
+		return pizza.getIngredientiBase() + " , salame piccante";
 	}
 
 	@Override

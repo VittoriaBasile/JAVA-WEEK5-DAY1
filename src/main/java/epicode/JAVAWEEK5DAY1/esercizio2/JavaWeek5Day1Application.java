@@ -19,7 +19,7 @@ public class JavaWeek5Day1Application {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(
 				epicode.JAVAWEEK5DAY1.esercizio2.BeansConfiguration.class);
 		Margherita pizza1 = (Margherita) ctx.getBean("margherita");
-		Diavola pizza2 = (Diavola) ctx.getBean("diavola");
+		SalamePiccanteExtra pizza2 = new SalamePiccanteExtra(pizza1);
 		AnanasExtra pizza3 = new AnanasExtra(pizza1);
 		Spigolata pizza4 = (Spigolata) ctx.getBean("spigolata");
 

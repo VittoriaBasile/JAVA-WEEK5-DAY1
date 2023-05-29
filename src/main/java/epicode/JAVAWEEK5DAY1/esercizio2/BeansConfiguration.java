@@ -12,14 +12,14 @@ public class BeansConfiguration {
 		return new Margherita();
 	}
 
-	@Bean(name = "diavola")
-	Diavola diavola() {
-		return new Diavola();
-	}
-
 	@Bean(name = "hawaiana")
 	AnanasExtra hawaiana(Pizza pizza) {
 		return new AnanasExtra(pizza);
+	}
+
+	@Bean(name = "diavola")
+	SalamePiccanteExtra diavola(Pizza pizza) {
+		return new SalamePiccanteExtra(pizza);
 	}
 
 	@Bean(name = "spigolata")

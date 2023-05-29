@@ -36,9 +36,4 @@ public class ProsciuttoExtra extends IngredientiExtraDecorator {
 				+ getCalorie() + ", Ingredienti= " + getIngredientiBase() + "]";
 	}
 
-	@Override
-	public String setNome() {
-		return null;
-	}
-
 }
