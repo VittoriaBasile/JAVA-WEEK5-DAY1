@@ -12,4 +12,5 @@ public abstract class Pizza {
 	private double prezzo = 2.50;
 	private long calorie = 1104;
 	private String ingredientiBase = "pomodoro, mozzarella";
+
 }

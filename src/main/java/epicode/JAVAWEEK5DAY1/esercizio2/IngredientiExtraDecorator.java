@@ -16,4 +16,6 @@ public abstract class IngredientiExtraDecorator extends Pizza {
 	@Override
 	public abstract String getIngredientiBase();
 
+	public abstract String setNome();
+
 }

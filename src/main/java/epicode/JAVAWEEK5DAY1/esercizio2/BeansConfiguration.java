@@ -18,8 +18,8 @@ public class BeansConfiguration {
 	}
 
 	@Bean(name = "hawaiana")
-	Hawaiana hawaiana() {
-		return new Hawaiana();
+	AnanasExtra hawaiana(Pizza pizza) {
+		return new AnanasExtra(pizza);
 	}
 
 	@Bean(name = "spigolata")
